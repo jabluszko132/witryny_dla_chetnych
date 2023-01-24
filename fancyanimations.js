@@ -11,3 +11,5 @@ document.body.onclick = () => {
             setTimeout(() => {wave.remove()},600);
         })
     });}
+
+//changed sth there 
