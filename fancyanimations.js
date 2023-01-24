@@ -12,4 +12,4 @@ document.body.onclick = () => {
         })
     });}
 
-//changed sth here for example
+//changed sth here for ex
