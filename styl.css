@@ -1,0 +1,128 @@
+* {text-align: center;
+    color: white}
+html {background-color: #bdb76b;
+    overflow-x: hidden;
+    overflow-y: auto;}
+body {display: flex;
+    flex-wrap: wrap;}
+
+header, article {width: 100%;}
+
+article {background: linear-gradient(180deg,#3D3D61,#1a1a2b);
+    height: 68vh;
+    overflow-y: auto;
+    overflow-x: hidden;}
+
+h1 {width: 100%;}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg,#3d3d61,#ff0088);
+    height: 30vh;
+    background-repeat:round;
+}
+
+header input {position: relative;
+    top: -2em;
+    margin: 6px}
+header a {
+    position: relative;
+    top: -1.7em;
+    margin: 6px;
+}
+header div {width: 100%;}
+
+input[type='text'],input[type='date'] { background-color: rgb(30,30,30);
+    color: white;
+    border: none;
+    height: 2em;
+    border-radius: 10%/40%;}
+
+ul {list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;} 
+
+li > div {overflow: auto;
+    width: 30%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+.zadania{
+    width: 50%;
+    height: 75px;
+    background-color: #222268;
+    border: 1px solid #222268;
+    margin-bottom: 2em;
+    margin-right: 10%;
+    color: white;
+    border-radius: 5%/20%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;}
+
+
+.zadania > input:first-of-type {
+    width: 9%;
+    margin: 10px;}
+
+
+.taskImg {
+    max-width: 45%;
+    max-height: 74px;
+}
+
+
+a {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(90deg,#1B97BF,#5dafca) ;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    border-radius: 35%/40%;
+    min-width: 50px;
+    max-height: 2.4em;
+    font-weight: bold;
+}
+
+a:nth-child(2) {
+    overflow: hidden;
+    background: linear-gradient(90deg,#1B97BF,#5dafca) ;
+}
+span {
+    position: absolute;
+    overflow: hidden;
+    background: white;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 100%;
+    animation: waving 1s linear infinite;
+}
+
+@keyframes waving {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+
+input[type='checkbox'] {
+    height: 25px;
+    width: 25px;
+}
